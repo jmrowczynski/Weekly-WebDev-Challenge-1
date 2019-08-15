@@ -1,0 +1,18 @@
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  &__lizard-logo{
+    opacity: 0.3;
+    height: 6.9em;
+    margin-right: 1.3em;
+  }
+  &__text-logo{
+    height: 3.7em;
+    opacity: 0.3;
+  }
+  @media (max-width: $mobile-breakpoint){
+    font-size: 13px;
+  }
+}

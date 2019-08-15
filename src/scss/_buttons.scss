@@ -1,0 +1,27 @@
+.button{
+  background-image: linear-gradient(0deg, #7cc01e 0%, #a3d741 100%);
+  border: 1px solid #3b9a00;
+  border-radius: 0.2rem;
+  height: 3rem;
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 500;
+  text-shadow: 0.559px 0.829px 0px #51850e;
+  &--small{
+    font-size: 1.1rem;
+    height: 2.56rem;
+  }
+  &--transparent{
+    font-size: 1.1rem;
+    height: 2.56rem;
+    opacity: 0.6;
+  }
+  &--red{
+    font-size: 1.1rem;
+    background-image: linear-gradient(0deg, #ee3645 0%, #f55f71 100%);
+    border: 1px solid #a2202a;
+    height: 2.56rem;
+  }
+}

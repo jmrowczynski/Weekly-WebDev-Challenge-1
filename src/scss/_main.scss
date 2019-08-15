@@ -1,0 +1,33 @@
+.main{
+  display: flex;
+  justify-content: center;
+  @media (max-width: $mobile-breakpoint){
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__container-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5rem;
+    width: 50%;
+    @media (max-width: $mobile-breakpoint){
+      width: 100%;
+      margin-right: 0;
+      align-items: stretch;
+    }
+  }
+  &__container-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    @media (max-width: $mobile-breakpoint){
+      width: 100%;
+      margin-top: 3rem;
+      align-items: stretch;
+    }
+  }
+}

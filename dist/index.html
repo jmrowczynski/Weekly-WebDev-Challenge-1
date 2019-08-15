@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Challenge 1</title>
+</head>
+<body class="page">
+  <div class="container page__container">
+    <header class="header page__header">
+      <img class="header__lizard-logo" src="img/logo1.png" alt="logo" />
+      <img class="header__text-logo" src="img/logo_text.png" alt="logo-text" />
+    </header>
+    <main class="main container__main">
+      <div class="main__container-left">
+
+        <!-- Register section -->
+        <section class="section main__section">
+          <h3 class="section__title">Register Form</h3>
+            <form action="" class="form section__form">
+              <div class="fragment form__fragment">
+                <label for="register-username" class="fragment__label"><span class="fas fa-user fragment__icon" aria-hidden="true"></span></label>
+                <input id="register-username" type="text" class="fragment__input" placeholder="Username" />
+              </div>
+              <div class="fragment form__fragment">
+                <label for="register-first-password" class="fragment__label"><span class="fas fa-lock fragment__icon"></span></label>
+                <input id="register-first-password" type="password" class="fragment__input"
+                placeholder="Password" />
+              </div>
+              <div class="fragment form__fragment">
+                <label for="register-confirm-password" class="fragment__label"><span class="fas fa-lock fragment__icon"></span></label>
+                <input id="register-confirm-password" type="password" class="fragment__input" placeholder="Confirm Password" />
+              </div>
+              <div class="fragment form__fragment">
+                <label for="register-mail" class="fragment__label"><span class="fas fa-envelope fragment__icon"></span></label>
+                <input id="register-mail" type="email" class="fragment__input" placeholder="Email" />
+              </div>
+              <div class="fragment form__fragment">
+                <label for="register-location" class="fragment__label"><span class="fas fa-map-marker-alt fragment__icon"></span></label>
+                <select id="register-location" class="fragment__select" name="location">
+                  <option value="" disabled selected hidden>Your location</option>
+                  <option class="fragment__option" value="Polska">Polska</option>
+                  <option class="fragment__option" value="Niemcy">Niemcy</option>
+                  <option class="fragment__option" value="Ukraina">Ukraina</option>
+                </select>
+              </div>
+              <div class="checkbox form__checkbox">
+                <input id="checkbox" class="checkbox__input" type="checkbox" name="" value="" />
+                <label for="checkbox" class="checkbox__label">I have read and accept the terms of use.</label>
+              </div>
+              <button class="button form__button" type="submit">Sign up</button>
+            </form>
+        </section>
+
+        <!-- Mail section -->
+        <section class="section main__section">
+          <h3 class="section__title section__title--normal-offset">Send Email</h3>
+            <form action="" class="mail-form section__mail-form">
+              <div class="fragment mail-form__fragment">
+                <label for="mail-yourname" class="fragment__label"><span class="fas fa-user fragment__icon" aria-hidden="true"></span></label>
+                <input id="mail-yourname" type="text" class="fragment__input" placeholder="Your name" />
+              </div>
+              <div class="fragment mail-form__fragment">
+                <label for="send-mail" class="fragment__label"><span class="fas fa-envelope fragment__icon"></span></label>
+                <input id="send-mail" type="email" class="fragment__input" placeholder="Your Email" />
+              </div>
+              <textarea class="text-area mail-form__text-area" name="message" rows="9" cols="10" placeholder="Type your message..."></textarea>
+              <div class="checkbox mail-form__checkbox">
+                <input id="checkbox-send-copy" class="checkbox__input" type="checkbox" name="" value="" />
+                <label for="checkbox-send-copy" class="checkbox__label">Send a copy to my Email</label>
+              </div>
+              <button class="button mail-form__button" type="submit">Send Email</button>
+            </form>
+        </section>
+      </div>
+
+      <div class="main__container-right">
+
+        <!-- Sign In section -->
+        <section class="section main__section">
+          <h3 class="section__title">Sign In Form</h3>
+            <form action="" class="signin-form section__signin-form">
+              <div class="fragment signin-form__fragment">
+                <label for="signin-username" class="fragment__label"><span class="fas fa-user fragment__icon" aria-hidden="true"></span></label>
+                <input id="signin-username" type="text" class="fragment__input" placeholder="Username" />
+              </div>
+              <div class="fragment signin-form__fragment">
+                <label for="signin-password" class="fragment__label"><span class="fas fa-lock fragment__icon"></span></label>
+                <input id="signin-password" type="password" class="fragment__input"
+                placeholder="Password" />
+              </div>
+              <div class="signin-form__elements-wrapper">
+                <div class="checkbox signin-form__checkbox">
+                  <input id="checkbox-remember-me" class="checkbox__input" type="checkbox" name="" value="" />
+                  <label for="checkbox-remember-me" class="checkbox__label">Remember me</label>
+                </div>
+                <button class="button button--small signin-form__button" type="submit">Sign in</button>
+              </div>
+            </form>
+        </section>
+
+        <!-- Recover section -->
+        <section class="section main__section">
+          <h3 class="section__title section__title--small-offset">Recover Form</h3>
+            <form action="" class="recover-form section__recover-form">
+              <div class="fragment recover-form__fragment">
+                <label for="recover-mail" class="fragment__label"><span class="fas fa-envelope fragment__icon" aria-hidden="true"></span></label>
+                <input id="recover-mail" type="email" class="fragment__input" placeholder="Enter your Email" />
+              </div>
+              <div class="fragment recover-form__fragment">
+                <label for="recover-phone" class="fragment__label"><span class="fas fa-mobile-alt fragment__icon" aria-hidden="true"></span></label>
+                <input id="recover-phone" type="tel" class="fragment__input" placeholder="Enter your Phone number" />
+              </div>
+              <div class="recover-form__elements-wrapper">
+                <button class="button button--small recover-form__button" type="submit">Send</button>
+                <button class="button button--transparent recover-form__button" type="submit">Done</button>
+              </div>
+            </form>
+        </section>
+
+        <!-- Subscribe section -->
+        <section class="section main__section">
+          <h3 class="section__title section__title--small-offset">Subscribe Form</h3>
+            <form action="" class="subscribe-form section__subscribe-form">
+              <div class="fragment subscribe-form__fragment">
+                <label for="subscribe-mail" class="fragment__label"><span class="fas fa-envelope fragment__icon" aria-hidden="true"></span></label>
+                <input id="subscribe-mail" type="email" class="fragment__input" placeholder="Enter your Email" />
+              </div>
+              <div class="subscribe-form__elements-wrapper">
+                <button class="button button--small subscribe-form__button" type="submit">Subscribe</button>
+                <button class="button button--red subscribe-form__button" type="submit">No, Thanks</button>
+              </div>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer main__footer">
+          <img class="footer__img" src="img/Masteralb.png" alt="logo" />
+        </footer>
+
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'footer';
+@import 'header';
+@import 'components';
+@import 'section';
+@import 'main';
+@import 'form';
+@import 'checkbox';
+@import 'buttons';
+
+
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page{
+  background: url('img/Background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.container{
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 3.4rem 2rem;
+  @media (max-width: $mobile-breakpoint){
+    padding: 1rem 2rem;
+  }
+}
